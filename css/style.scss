@@ -114,9 +114,6 @@ header {
     }
 }
 
-.header_login_css {
-}
-
 #home_page {
     .index-block_1 {
         max-width: 100%;
@@ -137,14 +134,44 @@ header {
                 padding: 2rem;
                 border-radius: 2rem;
             }
-        }
 
-        .item {
-            text-align: center;
-            padding: 2rem;
+            .item {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 2rem 0;
+
+                .img_box {
+                    max-width: 150px;
+                    @include md {
+                        max-width: 200px;
+                    }
+                }
+
+                img {
+                    transition: 0.3s;
+                    @include hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
         }
     }
+
     .index-block_2 {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        h4 {
+            color: #2db4be;
+            font-weight: bold;
+            font-size: 2rem;
+            margin: 2rem;
+        }
+    }
+
+    .index-block_3 {
         margin-top: 10rem;
         margin-bottom: 5rem;
         text-align: center;
@@ -198,7 +225,7 @@ header {
             color: #3aac6a;
         }
     }
-    .index-block_3 {
+    .index-block_4 {
         margin-top: 10rem;
         margin-bottom: 5rem;
         text-align: center;
@@ -250,7 +277,7 @@ header {
             }
         }
     }
-    .index-block_4 {
+    .index-block_5 {
         margin-top: 10rem;
         margin-bottom: 5rem;
         text-align: center;
@@ -357,7 +384,7 @@ header {
             }
         }
     }
-    .index-block_5 {
+    .index-block_6 {
         margin-top: 10rem;
         text-align: center;
         background: #f3f6fd;
@@ -380,6 +407,18 @@ header {
                 }
             }
         }
+    }
+}
+
+#page {
+    padding: 5rem 0;
+
+    .page_title {
+        text-align: center;
+    }
+    object {
+        max-width: 100%;
+        width: 100%;
     }
 }
 

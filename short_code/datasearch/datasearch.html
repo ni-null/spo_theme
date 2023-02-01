@@ -1,0 +1,19 @@
+<form class="row g-3" id="get_products_form" onsubmit="return get_products(this)">
+    <div class="col-auto">
+        <label for="input1" class="visually-hidden"> </label>
+        <input type="text" readonly class="form-control-plaintext" id="input1" value="輸入統編">
+    </div>
+    <div class="col-auto">
+        <label for="input2" class="visually-hidden">Password</label>
+        <!--    <input type="number" class="form-control" id="input2" maxlength="8" minlength="8" placeholder="統編" required>
+      --> <input type="text" class="form-control" id="input2" minlength="8" maxlength="8" placeholder="統編">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">搜尋</button>
+    </div>
+</form>
+
+
+
+公司名稱 : <div id="company_name"></div>
+<table id="my_datatable" class="display table table-dark table-striped" width="100%"></table>

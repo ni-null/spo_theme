@@ -1,31 +1,72 @@
-<div class="index-block_5  ">
+<div class="index-block_5 container ">
 
-	<div class="container">
-		<h4>相關連結</h4>
+    <h4>影音專區</h4>
 
+    <div class="row ">
 
-		<div class="row item_box">
-			<?php
-			for ( $i = 1; $i < 7; $i++ ) {
-				$image = get_field( 'block_5_img_' . $i, 19 );
-				if ( ! empty( $image ) ) :
-					?>
+        <div class="video">
 
-			<div class=" col-6 col-md-4 col-lg-3">
-				<div class="item">
-					<a href="<?php echo esc_url( $image['caption'] ); ?>" target="_blank" rel="noopener">
-						<img src="<?php echo esc_url( $image['url'] ); ?>"
-							alt="<?php echo esc_attr( $image['alt'] ); ?>" />
-					</a></div>
-			</div>
+            <div class="card">
+                <div class="card-play"></div>
+                <div class="card-video">
+                    <iframe id="video"
+                        src="https://www.youtube.com/embed/SG33GAKQTk0?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                        frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+        </div>
 
-				<?php endif;} ?>
-
-		</div>
-
-
-	</div>
-
+    </div>
 
 
 </div>
+
+
+
+
+<script>
+    // Variables
+    var player,
+        card = document.querySelector('.card'),
+        play = document.querySelector('.card-play'),
+        video = document.querySelector('.card-video');
+
+
+    // Shine effect
+    card.onmousemove = function (e) {
+        const x = e.pageX - card.offsetLeft;
+        const y = e.pageY - card.offsetTop;
+
+        card.style.setProperty('--x', x + 'px');
+        card.style.setProperty('--y', y + 'px');
+    }
+
+
+    // Youtube API
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('video', {
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+
+    // Player Ready
+    function onPlayerReady(event) {
+        play.addEventListener('click', function () {
+            card.classList.add('video-is-open');
+            setTimeout(function () {
+                video.style.display = 'block';
+                player.playVideo();
+            }, 500);
+        });
+    }
+
+
+    // Inject YouTube API script
+    var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>

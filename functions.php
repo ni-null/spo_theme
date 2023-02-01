@@ -130,5 +130,18 @@ register_nav_menu( 'main-menu', 'Main menu' );
 
 // 縮圖
 add_theme_support( 'post-thumbnails' );
+add_filter( 'intermediate_image_sizes', '__return_empty_array' );
 
 
+// short_code
+require_once get_template_directory() . '/short_code/timeline/timeline.php';
+require_once get_template_directory() . '/short_code/datasearch/datasearch.php';
+// short_code
+
+
+// br
+add_filter( 'esc_html', 'newLines' );
+function newLines( $desc ) {
+	return htmlspecialchars_decode( $desc );
+}
+// br

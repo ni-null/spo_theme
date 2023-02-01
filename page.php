@@ -4,15 +4,16 @@
 while ( have_posts() ) :
 	the_post();
 	?>
-<h3>
-	<?php
-	the_category( '&nbsp;&rsaquo;&nbsp;' );
-	echo '&nbsp;&rsaquo;&nbsp;';
-	the_title();
-	?>
-</h3>
-	<?php the_content(); ?>
 
+<div class="container" id="page">
+<h1 class="page_title"> <?php the_title(); ?></h1>
+	
+<p class="page_content"><?php the_content(); ?></p>
+	
+</div>
+	
 
 
 <?php endwhile; // end of the loop. ?>
+
+<?php get_footer(); ?>

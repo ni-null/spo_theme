@@ -15,6 +15,9 @@
    
 	<?php get_template_part( 'component/index', 'block_5', get_post_format() ); ?>
 
+	<?php get_template_part( 'component/index', 'block_6', get_post_format() ); ?>
+
+
 
 </div>
 

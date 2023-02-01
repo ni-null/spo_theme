@@ -1,34 +1,30 @@
 <div class="index-block_3 container ">
 
-    <h4>最新消息</h4>
+<h4>快速連結</h4>
 
-    <div class="news_list ">
-
-        <ul>
-            <li> 
-				<div class="tag">招標公告</div>
-				<a href="http://" target="_blank" rel="noopener noreferrer">「111年第三次電腦軟體共同供應契約採購-資通安全服務暨資訊服務
-                    」(案號1110203)，之合約相關文件資料及注意事項</a>
-				</li> 
-				<li> 
-				<div class="tag">招標公告</div>
-				<a href="http://" target="_blank" rel="noopener noreferrer">「111年第三次電腦軟體共同供應契約採購-資通安全服務暨資訊服務
-                    」(案號1110203)，之合約相關文件資料及注意事項</a>
-				</li>
-				<li> 
-				<div class="tag">招標公告</div>
-				<a href="http://" target="_blank" rel="noopener noreferrer">「111年第三次電腦軟體共同供應契約採購-資通安全服務暨資訊服務
-                    」(案號1110203)，之合約相關文件資料及注意事項</a>
-				</li>
-				<li> 
-				<div class="tag">招標公告</div>
-				<a href="http://" target="_blank" rel="noopener noreferrer">「111年第三次電腦軟體共同供應契約採購-資通安全服務暨資訊服務
-                    」(案號1110203)，之合約相關文件資料及注意事項</a>
-				</li>
-        </ul>
+	<div class="row ">
+	
+	
+	
+	<div class="item_box col-6 col-md-3 ">
+		<div class="item"><i class="fa-solid fa-store"></i>資訊服務商城</div>
+	</div>
+	<div class="item_box col-6 col-md-3 ">
+		<div class="item"><i class="fa-solid fa-flag"></i>招標公告</div>
+	</div>
+	
+	<div class="item_box col-6 col-md-3 ">
+		<div class="item"><i class="fa-sharp fa-solid fa-fire"></i>活動花絮</div>
+	</div>
+	
+	<div class="item_box col-6 col-md-3 ">
+		<div class="item"><i class="fa-solid fa-circle-question"></i>常見問題</div>
+	</div>
+	 
+	
 
 
-    </div>
+	</div>
 
 
 

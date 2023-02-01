@@ -10,9 +10,11 @@
 				?>
 
 		<div class="item col-6 col-md-4 col-lg-2">
-			<a href="<?php echo esc_url( $image['caption'] ); ?>" target="_blank" rel="noopener">
-			<img src="<?php echo esc_url( $image['url'] ); ?>"alt="<?php echo esc_attr( $image['alt'] ); ?>" />
-		</a>
+			<div class="img_box"> 
+				<a href="<?php echo esc_url( $image['caption'] ); ?>" rel="noopener">
+					<img src="<?php echo esc_url( $image['url'] ); ?>"alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+				</a>
+			</div>
 		</div>
 	   
 				<?php endif;} ?>
